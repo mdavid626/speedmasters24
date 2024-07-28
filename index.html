@@ -3,9 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML5 Boilerplate</title>
+  <title>Nürburgring laps</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json" />
 </head>
-<body>
-<h1>Page Title</h1>
+<body class="p-4 flex flex-col items-center">
+  <div class="flex flex-col gap-8 p-4" style="width: 800px; background-color: #efefef">
+    <div class="flex flex-col gap-2">
+      <div class="text-3xl font-semibold flex gap-1 items-center">
+        <div style="background-color: #E60000" class="p-4">
+          <img width="134" height="24" alt="Nürburgring" src="https://s3nbrg01prod.s3.eu-central-1.amazonaws.com/assets/logo/logo_compact-8c8ef6d2cb0d5f3761fcbb0501d81ed77fb68963ab966c6c7a0181f18fc72d18.svg">
+        </div>
+      </div>
+      <div class="flex flex-col gap-2 items-center">
+        <div class="flex items-center justify-center p-10" style="width: 150px; height: 150px; border: 3px solid#E60000; border-radius: 50%; font-size: 50px">275</div>
+        <div class="text-xl">Total laps</div>
+      </div>
+      <div>
+        <div class="font-semibold">2024: 31</div>
+        <div>2023: 51</div>
+        <div>2022: 163</div>
+        <div>2021: 30</div>
+      </div>
+    </div>
+    <div>
+      <div class="text-3xl font-semibold">
+        Cars
+      </div>
+      <div class="flex flex-col gap-8">
+        <div>
+          <div>Honda Accord</div>
+          <div class="flex gap-1">
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2004</div>
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">190 PS</div>
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2.4l inline 4</div>
+          </div>
+          <div>Laps: around 150</div>
+        </div>
+        <div>
+          <div class="font-semibold">Renault Clio</div>
+          <div class="flex gap-1">
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2001</div>
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">169 PS</div>
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2l inline 4</div>
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">current</div>
+          </div>
+          <div>Laps: 100+</div>
+        </div>
+        <div>
+          <div>BMW M235i</div>
+          <div class="flex gap-1">
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2014</div>
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">326 PS</div>
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">3l inline 6</div>
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">stock</div>
+          </div>
+          <div>Laps: 3</div>
+        </div>
+        <div>
+          <div>Volkswagen Golf GTD</div>
+          <div class="flex gap-1">
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2016</div>
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">184 PS</div>
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2l inline 4</div>
+            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">daily</div>
+          </div>
+          <div>Laps: 2</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
