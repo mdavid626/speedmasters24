@@ -10,71 +10,144 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json" />
+  <style>
+    body {
+      background-color: #e3e3e3;
+    }
+
+    .pageContainer {
+      width: 100%;
+      background-color: #fff;
+    }
+    @media (min-width: 1024px) {
+      .pageContainer {
+        margin: 8px;
+        width: 800px;
+        border: 1px solid rgb(229, 231, 235);
+      }
+    }
+
+    .yearColumn {
+      padding: 4px 32px;
+      border-right: 1px solid rgb(229, 231, 235);
+    }
+
+    .countColumn {
+      text-align: right;
+      flex: 1;
+      padding: 4px 32px;
+    }
+
+    .carImage {
+      margin-top: 12px;
+    }
+
+    .carCard {
+      max-width: 400px;
+      background-color: #fff;
+
+    }
+  </style>
 </head>
-<body class="p-4 flex flex-col items-center">
-  <div class="flex flex-col gap-8 p-4" style="width: 800px; background-color: #efefef">
-    <div class="flex flex-col gap-2">
-      <div class="text-3xl font-semibold flex gap-1 items-center">
-        <div style="background-color: #E60000" class="p-4">
-          <img width="134" height="24" alt="Nürburgring" src="https://s3nbrg01prod.s3.eu-central-1.amazonaws.com/assets/logo/logo_compact-8c8ef6d2cb0d5f3761fcbb0501d81ed77fb68963ab966c6c7a0181f18fc72d18.svg">
-        </div>
+<body class="flex flex-col items-center">
+  <div class="flex flex-col gap-12 p-5 pageContainer">
+    <div class="flex flex-col gap-10 items-center">
+      <div class="text-3xl font-semibold flex gap-1 items-center" style="width: 200px;">
+        <img alt="speedmasters24" src="/images/logo.svg">
       </div>
       <div class="flex flex-col gap-2 items-center">
-        <div class="flex items-center justify-center p-10" style="width: 150px; height: 150px; border: 3px solid#E60000; border-radius: 50%; font-size: 50px">275</div>
+        <div class="flex items-center justify-center p-10" style="width: 150px; height: 150px; border: 3px solid #fa541c; border-radius: 50%; font-size: 50px">275</div>
         <div class="text-xl">Total laps</div>
       </div>
-      <div>
-        <div class="font-semibold">2024: 31</div>
-        <div>2023: 51</div>
-        <div>2022: 163</div>
-        <div>2021: 30</div>
+      <div class="border">
+        <div class="font-semibold bg-gray-200 flex">
+          <div class="yearColumn">2024</div>
+          <div class="countColumn">31</div>
+        </div>
+        <div class="flex">
+          <div class="yearColumn">2023</div>
+          <div class="countColumn">51</div>
+        </div>
+        <div class="bg-gray-200 flex">
+          <div class="yearColumn">2022</div>
+          <div class="countColumn">163</div>
+        </div>
+        <div class="flex">
+          <div class="yearColumn">2021</div>
+          <div class="countColumn">30</div>
+        </div>
       </div>
     </div>
     <div>
-      <div class="text-3xl font-semibold">
-        Cars
+      <div class="flex flex-col gap-8 items-center text-center">
+        <div class="flex flex-col items-center border rounded p-4 carCard shadow-lg">
+          <div class="font-semibold text-xl mb-4">Renault Clio</div>
+          <div class="flex gap-1 flex-wrap">
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">2001</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">169 PS</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">220 Nm</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">2l inline 4</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">5 speed manual</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">BC Racing coilovers</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">Nankang AR-1</div>
+            <div class="px-1 py-0.5 rounded bg-blue-400 text-white text-xs whitespace-nowrap">100+ laps</div>
+          </div>
+          <a href="/images/renault-clio-full.jpg">
+            <img src="/images/renault-clio-thumbnail.jpg" alt="renault clio" class="carImage" />
+          </a>
+        </div>
+        <div class="flex flex-col items-center border rounded p-4 carCard shadow-lg">
+          <div class="font-semibold text-xl mb-4">Volkswagen Golf GTD</div>
+          <div class="flex gap-1 flex-wrap">
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">2016</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">184 PS</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">380 Nm</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">6 speed manual</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">2l inline 4</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">KW v1 coilovers</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">daily</div>
+            <div class="px-1 py-0.5 rounded bg-blue-400 text-white text-xs whitespace-nowrap">2 laps</div>
+          </div>
+          <a href="/images/vw-golf-full.jpg">
+            <img src="/images/vw-golf-thumbnail.jpg" alt="vw golf" class="carImage" />
+          </a>
+        </div>
+        <div class="flex flex-col items-center border rounded p-4 carCard shadow-lg">
+          <div class="font-semibold text-xl mb-4">BMW M235i</div>
+          <div class="flex gap-1 flex-wrap">
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">2014</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">326 PS</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">450 Nm</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">3l inline 6</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">N55B30</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">8 speed automatic</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">stock</div>
+            <div class="px-1 py-0.5 rounded bg-blue-400 text-white text-xs whitespace-nowrap">3 laps</div>
+          </div>
+          <a href="/images/bmw-m235i-full.jpg">
+            <img src="/images/bmw-m235i-thumbnail.jpg" alt="bmw m235i" class="carImage" />
+          </a>
+        </div>
+        <div class="flex flex-col items-center border rounded p-4 carCard shadow-lg">
+          <div class="font-semibold text-xl mb-4">Honda Accord</div>
+          <div class="flex gap-1 flex-wrap">
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">2004</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">190 PS</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">232 Nm</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">2.4l inline 4</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">K24A3</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">6 speed manual</div>
+            <div class="px-1 py-0.5 rounded bg-gray-400 text-white text-xs whitespace-nowrap">stock</div>
+            <div class="px-1 py-0.5 rounded bg-blue-400 text-white text-xs whitespace-nowrapx">150 laps</div>
+          </div>
+          <a href="/images/honda-accord-full.jpg">
+            <img src="/images/honda-accord-thumbnail.jpg" alt="honda accord" class="carImage" />
+          </a>
+        </div>
       </div>
-      <div class="flex flex-col gap-8">
-        <div>
-          <div>Honda Accord</div>
-          <div class="flex gap-1">
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2004</div>
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">190 PS</div>
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2.4l inline 4</div>
-          </div>
-          <div>Laps: around 150</div>
-        </div>
-        <div>
-          <div class="font-semibold">Renault Clio</div>
-          <div class="flex gap-1">
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2001</div>
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">169 PS</div>
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2l inline 4</div>
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">current</div>
-          </div>
-          <div>Laps: 100+</div>
-        </div>
-        <div>
-          <div>BMW M235i</div>
-          <div class="flex gap-1">
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2014</div>
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">326 PS</div>
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">3l inline 6</div>
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">stock</div>
-          </div>
-          <div>Laps: 3</div>
-        </div>
-        <div>
-          <div>Volkswagen Golf GTD</div>
-          <div class="flex gap-1">
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2016</div>
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">184 PS</div>
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">2l inline 4</div>
-            <div class="px-1 py-0.5 rounded bg-gray-200 text-xs">daily</div>
-          </div>
-          <div>Laps: 2</div>
-        </div>
-      </div>
+    </div>
+    <div class="text-center text-xs">
+      2024 &copy; speedmasters24
     </div>
   </div>
 </body>
